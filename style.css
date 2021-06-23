@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: lightpink;
+    background-color: #B9C0DA;
 }
 
 .container {
@@ -38,7 +38,7 @@ body {
 
 .text-box > p > span {
     background: black;
-    color: lightblue;
+    color: #B9C0DA;
 }
 
 

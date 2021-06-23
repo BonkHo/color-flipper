@@ -2,7 +2,7 @@
 let body = document.querySelector('body');
 let bodyStyle = window.getComputedStyle(body);
 let bodyBackground = bodyStyle.getPropertyValue('background-color');
-document.getElementById("background-color").innerHTML = bodyBackground;
+document.getElementById("background-color").innerHTML = 'Periwinkle';
 
 // If the button is clicked on will execture buttonEventListener
 document.getElementById("color-flipper").addEventListener("click", buttonEventListener);
@@ -18,5 +18,10 @@ function getRandomInt(max) {
 
 
 function buttonEventListener() {
-    document.getElementById("background-color").innerHTML = "Hello World";
+    colorNumber = getRandomInt(5);
+    color = hexColor[colorNumber];
+    colorName = colors[colorNumber];
+    document.getElementById("body").style.background = color;
+    document.getElementById("background-color").style.color = color;
+    document.getElementById("background-color").innerHTML = colorName;
 }
